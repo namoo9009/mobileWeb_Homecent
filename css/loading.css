@@ -1,0 +1,4 @@
+/* loading.css */
+body{position: relative; margin: 0;padding: 0;width: 100vw;height: 100vh; background: linear-gradient(#0DBAB8,#15AEAD,#267F9F,#267F9F) no-repeat;}
+.inner{text-align: center;padding-top: 150px;color: #fff;}
+.inner p:last-of-type{position: absolute;left: 50%;transform: translateX(-50%); bottom: 50px; font-size: 30px;font-weight: bold;}

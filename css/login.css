@@ -1,0 +1,44 @@
+/* login.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+/* common */
+*,*::after,*::before{margin: 0;padding: 0;box-sizing: border-box;}
+a{text-decoration: none;color: inherit;}
+body{font-family: 'Noto Sans KR', sans-serif;}
+.inner{margin: auto; width: 1000px;}
+.row{position: relative;margin: 0 20px;}
+
+/* header */
+header{position: relative;margin-bottom: 20px; width: 100%;height: 60px; border-bottom: 1px solid #dcdcdc;}
+header h1{position: absolute;left: 50%; bottom: -50px;transform: translateX(-50%);font-size: 18px; font-weight: bold; color: #000000; text-align: center;}
+header a{position: absolute;bottom: -50px; display: block;width: 16px;height: 18px;}
+header a span{position: absolute; display: block;width: 14px;height: 14px;border: 1px solid #373737;border-right: none;border-bottom: none;transform: rotate(-45deg);}
+
+/* 로그인 */
+form{width: 100%;}
+.input_box div, .btn button{display: block; margin: 10px 0; width: 100%;height: 45px;border-radius: 5px;}
+
+.input_box div{position: relative; border: 1px solid #dddddd;}
+.input_box div::after{position: absolute;left: 0; top: 0; content: "";width: 44px;height: 44px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;}
+.input_box div:first-of-type::after{background: #EEE url(../images/icon_id.png)no-repeat 50% 50%;}
+.input_box div:last-of-type::after{background: #EEE url(../images/icon_pw.png)no-repeat 50% 50%;}
+.input_box input{padding-left: 55px; width: 100%;height: 100%;border: none;outline: none;border-radius: 5px;}
+
+.btn{margin-top: 40px;}
+.btn button{border: none;font-size: 18px;font-weight: 500;}
+.btn button:first-child{color: #fff;; background-color: #00BBD3;}
+.btn button:last-child{background-color: #eee;}
+
+.findBtn{position: absolute;right: 0;}
+.findBtn a{color: #9E9E9E;font-size: 14px;}
+.findBtn a:first-child{margin-right: 10px;}
+
+.sns_login{position: relative; margin-top: 120px;text-align: center;}
+.sns_login h2{z-index: 1;position: absolute;top: -40px;;left: 50%;width: 100%; transform: translateX(-50%); color: #008BA2;}
+.sns_login h2::before{position: absolute;left: 0;top: 35px; content: "";width: 100%;height: 1px;background-color: #008BA2;}
+.sns_login a{display: inline-block;margin: 15px;}
+
+/* media query */
+@media (max-width: 1020px) {
+    .inner{width: 100%;}
+}
