@@ -1,0 +1,59 @@
+/* status-bar.css */
+
+.status-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: var(--font-size--small);
+    font-weight: 300;
+}
+
+.status-bar__icon--left img {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.status-bar__time {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: var(--font-weight--medium);
+}
+
+.status-bar__icon--right {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.status-bar__icon--right span {
+    color: #000;
+}
+
+.status-bar__icon--right .bettery {
+    position: relative;
+    display: inline-block;
+    margin-top: 3px;
+    margin-left: 5px;
+    width: 20px;
+    height: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.status-bar__icon--right .bettery::after {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    content: "";
+    width: 80%;
+    height: 8px;
+    border-radius: 2px;
+    background-color: #000
+}

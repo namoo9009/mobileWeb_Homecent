@@ -1,0 +1,37 @@
+/* alt-header.css */
+
+.alt-header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding: 40px var(--horizontal-space) 10px;
+    border-bottom: var(--header-border--bottom);
+    box-sizing: border-box;
+
+}
+
+.alt-header__prevbtn{
+    position: relative;
+    width: 20px;
+    height: 25px;
+}
+.alt-header__prevbtn::after{
+    position: absolute;
+    left: 0;
+    top: 3px;
+    content: "";
+    width: 17px;
+    height: 17px;
+    border: 1px solid #000;
+    border-right: none;
+    border-bottom: none;
+    transform: rotate(-45deg);
+}
+.alt-header__title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: var(--font-size--h1);
+    font-size: var(--font-size--h1);
+    font-weight: var(--font-weight--medium);
+}
