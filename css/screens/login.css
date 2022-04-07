@@ -47,34 +47,38 @@ form.login-screen{
     background-color: var(--color--grey-bright);
     display: flex;
     gap: 1px;
+    border-radius: var(--border-radius);
 
 }
 .find-account-btn button{
     padding: 0;
     width: 50%;
     height: 43px;
+    color: var(--color--grey-dark);
     border: none;
     background-color: var(--color--grey-bright);
 }
 .find-account-btn button:focus{
     outline: 1px solid var(--color--grey);
 }
-.find-account-btn.id .find-account-btn__id{
-    margin-left: 3px;
-    margin-top: 3px;
-    background-color: var(--color--white);
-}
+.find-account-btn.id .find-account-btn__id,
 .find-account-btn.pw .find-account-btn__pw{
     margin-left: 3px;
     margin-top: 3px;
+    color: var(--color--black);
+    font-weight: var(--font-weight--bold);
     background-color: var(--color--white);
+    border-radius: var(--border-radius);
 }
-
-/* .btn--find-account span{
-    box-sizing: border-box;
-    border: 1px solid red;
-    display: inline-block;
-    width: 49%;
-    margin: 0;
-    padding: 0;
-} */
+.login-input--list{
+    position: relative;
+}
+.login-input--list button{
+    position: absolute;
+    right: 10px;
+    top: 65px;
+    height: 35px;
+    font-size: var(--font-size--small);
+    border-radius: var(--border-radius);
+    border: none;
+}
