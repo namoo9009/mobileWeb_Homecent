@@ -1,0 +1,26 @@
+/* loading.css */
+
+.loading-screen{
+    margin: 0;
+    padding: 0;
+    padding-top: 200px;
+    width: 100%;
+    height: 100%;
+    color: var(--color--white);
+    background: linear-gradient(#0DBAB8, #15AEAD, #267F9F, #267F9F) no-repeat;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.loading-screen p{
+    padding-top: 20px;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.loading-screen h1{
+    padding-top: 200px;
+    font-weight: var(--font-weight--bold);
+    font-size: 30px;
+}
+
