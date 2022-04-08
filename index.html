@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,50 @@
     <title>Homecent</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <!-- status-bar -->
+    <div class="status-bar">
+        <div class="status-bar__icon--left">
+            <span>No Service</span>
+            <img src="images/wifi.svg" alt="wifi">
+        </div>
+        <div class="status-bar__time">
+            <span class="clock">11:00</span>
+        </div>
+        <div class="status-bar__icon--right">
+            <span>80%</span>
+            <span class="bettery"></span>
+        </div>
+    </div>
+    <!-- //status-bar -->
     <!-- header -->
-    <header>
-        <div class="inner">
-            <div class="row">
-                <h1>Homecent</h1>
-                <a href="#"><span></span></a>
-            </div>
+    <header class="screen-header">
+        <div class="screen-header__hambtn">
+            <span></span>
+        </div>
+        <h1 class="screen-header__title">Homecent</h1>
+        <div class="screen-header">
+            <span></span>
+            <span></span>
         </div>
     </header>
     <!-- //header -->
-    <!-- section -->
+    <main>
+        <ul>
+            <li><a href="#"><img src="images/banner.png" alt="2020 PC액세서리 특가전"></a></li>
+        </ul>
+    </main>
     <section>
-        <div class="inner">
-            <div class="row">
-
-            </div>
-        </div>
+        <h2>새로나온 상품</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="" alt="">
+                </a>
+            </li>
+        </ul>
     </section>
-    <!-- //section -->
-    <!-- section -->
-    <section>
-        <div class="inner">
-            <div class="row">
-
-            </div>
-        </div>
-    </section>
-    <!-- //section -->
 </body>
+
 </html>
