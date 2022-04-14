@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homecent</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
 </head>
 
 <body>
+    <div class="wrap">
     <!-- status-bar -->
     <div class="status-bar">
         <div class="status-bar__icon--left">
@@ -31,29 +33,25 @@
         <h1 data-splash="Homecent">Homecent</h1>
     </div>
     <!-- //splash -->
-
-
     <!-- header -->
-    <header class="screen-header">
+    <header class="screen-header main">
         <div class="screen-header__hambtn">
-            <span></span>
+            <span><img src="images/icon_ham.png" alt="메뉴"></span>
         </div>
         <h1 class="screen-header__title">Homecent</h1>
         <div class="screen-header__icon">
-            <span></span>
-            <span></span>
+            <span><img src="images/icon_src.png" alt="검색"></span>
+            <span><img src="images/icon_notice.png" alt="알림"></span>
         </div>
     </header>
     <!-- //header -->
     <main>
-        <div class="slide_wrapper">
+        <div class="slide-wrapper">
             <ul class="slides">
                 <li>
-                    <a href="#"></a>
                     <a href="#"><img src="images/banner.png" alt="2020 PC액세서리 특가전"></a>
                 </li>
                 <li>
-                    <a href=""></a>
                     <a href="#"><img src="images/banner.png" alt="2020 PC액세서리 특가전"></a>
                 </li>
                 <li><a href="#"><img src="images/banner.png" alt="2020 PC액세서리 특가전"></a></li>
@@ -61,22 +59,91 @@
                 <li><a href="#"><img src="images/banner.png" alt="2020 PC액세서리 특가전"></a></li>
             </ul>
         </div>
-        <p class="controls">
-            <span class="prev">prev</span>
-            <span class="next">next</span>
-        </p>
-
+        <p class="banner-rollring"></p>
     </main>
-    <section>
-        <h2>새로나온 상품</h2>
+    <section class="main-content">
+        <h2>새로 올라온 상품</h2>
         <ul>
             <li>
                 <a href="#">
-                    <img src="" alt="">
+                    <img src="images/product_1.png" alt="상품1">
+                    <div class="text">
+                        <h3>가정용 히터 팝니다.</h3>
+                        <p>32,000원</p>
+                        <p class="confirm">인증</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/product_2.png" alt="상품1">
+                    <div class="text">
+                        <h3>얼마 쓰지않은 드라이기 판매합니다.</h3>
+                        <p>32,000원</p>
+                        <p class="confirm">인증</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/product_3.png" alt="상품1">
+                    <div class="text">
+                        <h3>분위기 있는 인테리어 하기에 좋은 조명입니다.</h3>
+                        <p>32,000원</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/product_4.png" alt="상품1">
+                    <div class="text">
+                        <h3>유닉스 고데기 얼마 안썼어요.</h3>
+                        <p>32,000원</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/product_5.png" alt="상품1">
+                    <div class="text">
+                        <h3>새거같은 히터 팔아요.</h3>
+                        <p>32,000원</p>
+                        <p class="confirm">인증</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/product_6.png" alt="상품1">
+                    <div class="text">
+                        <h3>블루투스 키보드 얼마 안썼는데 팔아요.</h3>
+                        <p>32,000원</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/product_1.png" alt="상품1">
+                    <div class="text">
+                        <h3>겨울 필수템이요에.</h3>
+                        <p>32,000원</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/product_2.png" alt="상품1">
+                    <div class="text">
+                        <h3>여행용으로 좋은 드라이기에요.</h3>
+                        <p>32,000원</p>
+                        <p class="confirm">인증</p>
+                    </div>
                 </a>
             </li>
         </ul>
     </section>
+    </div>
+
 
 
 </body>

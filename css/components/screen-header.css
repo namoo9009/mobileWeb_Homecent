@@ -1,13 +1,27 @@
 .screen-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--horizontal-space);
     width: 100%;
     height: 75px;
+    box-sizing: border-box;
+}
+.screen-header.main{
+    background: var(--color-main);
 }
 .screen-header__hambtn{
 
 }
-.screen-header__title{
-
+.screen-header.main .screen-header__title{
+    color: #fff;
 }
-.screen-header__icon{
-
+.screen-header__title{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+font-size: var(--font-size--h1);
+}
+.screen-header__icon span{
+    margin-left: 10px;
 }
