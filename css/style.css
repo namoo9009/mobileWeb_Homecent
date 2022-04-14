@@ -6,15 +6,18 @@
 @import url(components/screen-header.css);
 @import url(components/alt-header.css);
 @import url(components/btn.css);
+@import url(components/navigation.css);
 
 @import url(screens/main.css);
 @import url(screens/login.css);
 @import url(screens/loading.css);
+@import url(screens/register.css);
+@import url(screens/chatting.css);
 
 body{
     position: relative;
     margin: 0 auto;
-    max-width: 576px;
+    max-width: var( --max-width);
     font-family: 'Noto Sans KR', sans-serif;
     color: var(--color--black);
     /* background-color: #F9f9f9; */

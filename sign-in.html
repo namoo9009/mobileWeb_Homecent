@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>비밀번호 찾기</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/alt-header.js"></script>
 </head>
 <body>
     <!-- status-bar -->
@@ -25,7 +26,7 @@
     <!-- //status-bar -->
     <!-- header -->
     <header class="alt-header">
-        <div class="alt-header__prevbtn"></div>
+        <a href="javascript:history.go(-1)" class="alt-header__prevbtn"></a>
         <h1 class="alt-header__title">회원가입</h1>
     </header>
     <!-- //header -->
@@ -41,7 +42,7 @@
                 <input type="password" id="sign-in--pw-check" class="login-input mobile" placeholder="비밀번호 확인">
             </div>
             <div class="btn--list">
-                <button class="btn btn--sign-in color">회원가입</button>
+                <button class="btn btn--sign-in color"><a href="">회원가입</a></button>
             </div>
         </form>
     </main>

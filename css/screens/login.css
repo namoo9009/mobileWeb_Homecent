@@ -63,7 +63,7 @@ form.login-screen{
 }
 .find-account-btn.id .find-account-btn__id,
 .find-account-btn.pw .find-account-btn__pw{
-    margin-left: 3px;
+    margin: 0 3px;
     margin-top: 3px;
     color: var(--color--black);
     font-weight: var(--font-weight--bold);
