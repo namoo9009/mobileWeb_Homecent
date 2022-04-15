@@ -11,63 +11,113 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-    <!-- status-bar -->
-    <div class="status-bar">
-        <div class="status-bar__icon--left">
-            <span>No Service</span>
-            <img src="images/wifi.svg" alt="wifi">
-        </div>
-        <div class="status-bar__time">
-            <span class="clock">11:00</span>
-        </div>
-        <div class="status-bar__icon--right">
-            <span>80%</span>
-            <span class="bettery"></span>
-        </div>
+<!-- status-bar -->
+<div class="status-bar">
+    <div class="status-bar__icon--left">
+        <span>No Service</span>
+        <img src="images/wifi.svg" alt="wifi">
     </div>
-    <!-- //status-bar -->
-    <!-- header -->
-    <header class="alt-header">
-        <h1 class="alt-header__title">채팅</h1>
-    </header>
-    <!-- //header -->
-
-    <div class="navigation">
+    <div class="status-bar__time">
+        <span class="clock">11:00</span>
+    </div>
+    <div class="status-bar__icon--right">
+        <span>80%</span>
+        <span class="bettery"></span>
+    </div>
+</div>
+<!-- //status-bar -->
+<!-- screen-header -->
+<header class="screen-header">
+    <h1 class="screen-header__title">채팅</h1>
+    <div class="screen-header__hambtn">
+        <span><img src="images/icon_ham.png" alt="메뉴"></span>
+    </div>
+    <div class="screen-header__icon">
+        <span><img src="images/icon_src.png" alt="검색"></span>
+        <!-- <span><img src="images/icon_notice.png" alt="알림"></span> -->
+    </div>
+</header>
+<!-- //screen-header -->
+<!-- main -->
+<main class="main-screen">
+    <section class="chatting-content content">
         <ul>
-            <li class="list">
-                <a href="index.html">
-                    <span class="icon">
-                        <ion-icon name="home-outline"></ion-icon>
-                    </span>
-                    <span class="text">홈</span>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="images/profile.png" alt="프로필사진">
+                    </div>
+                    <div>
+                        <div>
+                            <span class="nickname">아리가또</span>
+                            <span class="date">2022년 11월 15일</span>
+                        </div>
+                        <p class="chatting">어디계세요?</p>
+                    </div>
+                    <div>
+                        <img src="images/chatting_product.png" alt="상품사진">
+                    </div>
                 </a>
             </li>
-            <li class="list">
-                <a href="register.html">
-                    <span class="icon">
-                        <ion-icon name="bag-add-outline"></ion-icon>
-                    </span>
-                    <span class="text">상품등록</span>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="images/profile_2.png" alt="프로필사진">
+                    </div>
+                    <div>
+                        <div>
+                            <span class="nickname">수민엄마</span>
+                            <span class="date">2022년 11월 15일</span>
+                        </div>
+                        <p class="chatting">감사합니다.</p>
+                    </div>
+                    <div>
+                        <img src="images/chatting_product_2.png" alt="상품사진">
+                    </div>
                 </a>
             </li>
-            <li class="list active">
-                <a href="chatting.html">
-                    <span class="icon">
-                        <ion-icon name="chatbubble-outline"></ion-icon>
-                    </span>
-                    <span class="text">채팅</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="login.html">
-                    <span class="icon">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </span>
-                    <span class="text">마이페이지</span>
-                </a>
-            </li>
-            <div class="indicator"></div>
         </ul>
-    </div>
+    </section>
+</main>
+<!-- //main -->
+<!-- navigiton -->
+<nav class="navigation">
+    <ul>
+        <li class="list">
+            <a href="index.html">
+                <span class="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="text">홈</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="register.html">
+                <span class="icon">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                </span>
+                <span class="text">상품등록</span>
+            </a>
+        </li>
+        <li class="list active">
+            <a href="chatting.html">
+                <span class="icon">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                </span>
+                <span class="text">채팅</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="login.html">
+                <span class="icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                </span>
+                <span class="text">마이페이지</span>
+            </a>
+        </li>
+        <div class="indicator"></div>
+    </ul>
+</nav>
+<!-- //navigiton -->
 </body>
 </html>

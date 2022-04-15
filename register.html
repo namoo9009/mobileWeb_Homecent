@@ -26,14 +26,41 @@
     </div>
 </div>
 <!-- //status-bar -->
-<!-- header -->
-<header class="alt-header">
-    <a href="javascript:history.go(-1)" class="alt-header__prevbtn"></a>
-    <h1 class="alt-header__title">상품등록</h1>
+<!-- screen-header -->
+<header class="screen-header">
+    <h1 class="screen-header__title">상품등록</h1>
 </header>
-<!-- //header -->
-
-<div class="navigation">
+<!-- //screen-header -->
+<!-- main -->
+<main class="main-screen">
+    <section class="register-content content">
+        <form method="post" enctype="multipart/form-data">
+            <ul>
+                <li>
+                    <div class="chooseFile-button">
+                        <label for="chooseFile">
+                            <span>0/10</span>
+                        </label>
+                    </div>
+                    <input type="file" id="chooseFile" name="chooseFile" accept="image/*" >
+                </li>
+                <li>
+                    <input type="text" placeholder="글제목">
+                </li>
+                <li>
+                    <input type="text" placeholder="가격">
+                </li>
+                <li>
+                    <textarea cols="30" rows="10" style="resize: none;" placeholder="상품을 설명하는 글을 작성해주세요."></textarea>
+                </li>
+            </ul>
+            <button type="submit" class="register-submit btn color">등록완료</button>
+        </form>
+    </section>
+</main>
+<!-- //main -->
+<!-- navigation -->
+<nav class="navigation">
     <ul>
         <li class="list">
             <a href="index.html">
@@ -69,6 +96,7 @@
         </li>
         <div class="indicator"></div>
     </ul>
-</div>
+</nav>
+<!-- //navigation -->
 </body>
 </html>

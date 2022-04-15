@@ -2,11 +2,12 @@
 .navigation{
     position: fixed;
     bottom: 0px;
-    width: 100%;
+    width: 100vw;
     max-width: var( --max-width);
     height: 70px;
     border-top: 1px solid #eee;
     background: #fff;
+    z-index: 20;
 }
 
 .navigation ul{
@@ -66,9 +67,9 @@
     left: 0;
     width: calc(100% / 4);
     height: 70px;
-    background: #eee;
+    /* background: #eee; */
     transition: 0.5s;
-    box-shadow: 0 0 3px #aaa;
+    /* box-shadow: 0 0 3px #aaa; */
 }
 
 .navigation ul li:nth-child(1).active ~ .indicator{

@@ -1,0 +1,28 @@
+.slide-wrapper{
+    position: relative;
+    width: 500%;
+    height: auto;
+    box-sizing: border-box;
+}
+.slide-wrapper .slides{
+    width: calc(100% / 5);
+    height: auto;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.slide-wrapper .slides.animated{
+position: absolute;
+top: 0;
+left: 0;
+}
+.slides li{
+    margin-right: -4px;
+    width: 100%;
+    display: inline-block;
+}
+.slides li:nth-child(1){
+    margin-block-end: 0;
+}
+.slides li img{
+    width: 100%;
+}

@@ -7,14 +7,20 @@
 @import url(components/alt-header.css);
 @import url(components/btn.css);
 @import url(components/navigation.css);
+@import url(components/slide.css);
 
-@import url(screens/main.css);
+@import url(screens/index.css);
 @import url(screens/login.css);
 @import url(screens/loading.css);
 @import url(screens/register.css);
 @import url(screens/chatting.css);
 
+*{
+    box-sizing: border-box;
+}
+
 body{
+    overflow-x: hidden;
     position: relative;
     margin: 0 auto;
     max-width: var( --max-width);
@@ -24,7 +30,15 @@ body{
 }
 
 .main-screen{
-    padding: 100px var(--horizontal-space) 0;
+    width: 100%;
+    padding-top: 95px;
+    padding-bottom: 75px;
+}
+.main-screen.slide{
+    padding-top: 75px;
 }
 
+.content{
+    padding: 0 var(--horizontal-space);
+}
 

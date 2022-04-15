@@ -1,0 +1,55 @@
+/* register.css */
+.register-content{
+    width: 100%;
+    
+}
+.register-content li{
+    width: 100%;
+    border-bottom: 1px solid var(--color--grey-light);
+}
+.register-content .chooseFile-button{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border: 1px solid var(--color--grey-light);
+    border-radius: var(--border-radius);
+    background: url(../../images/icon_camera.png) no-repeat 50% 50%;
+}
+.register-content .chooseFile-button label{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+.register-content .chooseFile-button label span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px;
+    font-size: var(--font-size--smallest);
+    color: var(--color--grey);
+}
+/* 사진 인풋 숨기기 */
+.register-content input[type="file"]{
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+}
+.register-content li:first-child{
+    border-bottom: none;
+}
+.register-content li input, 
+.register-content li textarea{
+    padding: 20px 10px;
+    border: none;
+    outline: none;
+}
+.register-content li textarea{
+    width: 100%;
+}
+
+.register-submit{
+    margin-top: 30px;
+}
+

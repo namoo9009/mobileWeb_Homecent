@@ -6,31 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아이디 찾기</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-    <!-- status-bar -->
-    <div class="status-bar">
-        <div class="status-bar__icon--left">
-            <span>No Service</span>
-            <img src="images/wifi.svg" alt="wifi">
-        </div>
-        <div class="status-bar__time">
-            <span class="clock">11:00</span>
-        </div>
-        <div class="status-bar__icon--right">
-            <span>80%</span>
-            <span class="bettery"></span>
-        </div>
+<!-- status-bar -->
+<div class="status-bar">
+    <div class="status-bar__icon--left">
+        <span>No Service</span>
+        <img src="images/wifi.svg" alt="wifi">
     </div>
-    <!-- //status-bar -->
-    <!-- header -->
-    <header class="alt-header">
-        <a href="javascript:history.go(-1)" class="alt-header__prevbtn"></a>
-        <h1 class="alt-header__title">아이디 찾기</h1>
-    </header>
-    <!-- //header -->
-    <!-- 로그인 -->
-    <main class="main-screen">
+    <div class="status-bar__time">
+        <span class="clock">11:00</span>
+    </div>
+    <div class="status-bar__icon--right">
+        <span>80%</span>
+        <span class="bettery"></span>
+    </div>
+</div>
+<!-- //status-bar -->
+<!-- alt-header -->
+<header class="alt-header">
+    <a href="javascript:history.go(-1)" class="alt-header__prevbtn"></a>
+    <h1 class="alt-header__title">아이디 찾기</h1>
+</header>
+<!-- //alt-header -->
+<!-- main -->
+<main class="main-screen">
+    <section class="content">
         <div class="find-account-btn id">
             <button class="find-account-btn__id">아이디 찾기</button>
             <button class="find-account-btn__pw">비밀번호 찾기</button>
@@ -46,7 +50,8 @@
                 <button class="btn color">아이디 찾기</button>
             </div>
         </form>
-    </main>
-    <!-- //로그인 -->
+    </section>
+</main>
+<!-- //main -->
 </body>
 </html>

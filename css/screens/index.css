@@ -1,13 +1,16 @@
 /* main.css */
 
+/* splash */
 .splash{
-    z-index: 1;
+    z-index: 20;
     position: fixed;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     max-width: var(--max-width);
-    height: 100%;
+    height: 100vh;
     color: var(--color--white);
     background-color: var(--color-main);
     display: flex;
@@ -22,12 +25,13 @@
     0%{
         opacity: 1;
         visibility: visible;
+        display: block;
     }
     100%{
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
-
+        display: none;
     }
 }
 .splash img{
@@ -56,64 +60,98 @@
     height: 100%;
     color: #fff;
     overflow: hidden;
-    animation: splasnlAni 2s linear forwards;
+    animation: splasnlAni 2s ease-in-out forwards;
     -webkit-text-stroke: 0.5px rgba(255,255,255,0.1);
     
 }
 .splash.on h1::after{
     width: 100%;
 }
-
 @keyframes splasnlAni{
     0%,10%,100%{
         width: 0;
     }
-    50%,65%{
+    60%,65%{
         width: 100%;
     }
 }
 
-main{
-    overflow-x: hidden;
-}
 
-.slide-wrapper{
-    position: relative;
-    width: 500%;
-    height: auto;
-    box-sizing: border-box;
+/* main */
+/* header */
+.side-menu{
 
 }
-.slide-wrapper .slides{
-    width: calc(100% / 5);
-    height: auto;
-    white-space: nowrap;
-    overflow-x: scroll;
-
+.side-menu input[id="menuicon"]{
+    display: none;
 }
-.slide-wrapper .slides.animated{
-position: absolute;
-top: 0;
-left: 0;
+.side-menu input[id="menuicon"] + label{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 11;
 }
-.slides li{
-    margin-right: -4px;
+.side-menu input[id="menuicon"] + label span{
+    position: absolute;
+    display: block;
     width: 100%;
-    display: inline-block;
+    height: 2px;
+    background-color: var(--color--white);
+    transition: 0.35s;
 }
-.slides li:nth-child(1){
-    margin-block-end: 0;
+.side-menu input[id="menuicon"] + label span:nth-child(1){
+    top: 0;
 }
-
-.slides li img{
-    width: 100%;
+.side-menu input[id="menuicon"] + label span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
 }
-
+.side-menu input[id="menuicon"] + label span:nth-child(3){
+    bottom: 0;
+}
+.side-menu input[id="menuicon"]:checked + label span{
+    background-color: var(--color--grey-dark);
+}
+.side-menu input[id="menuicon"]:checked + label span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+.side-menu input[id="menuicon"]:checked + label span:nth-child(2){
+    opacity: 0;
+}
+.side-menu input[id="menuicon"]:checked + label span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+.side-menu div.side-menu-bar{
+    position: absolute;
+    /* visibility: hidden; */
+    width: 0;
+    height: 100vh;
+    background-color: var(--color--grey-bright);
+    top: 0;
+    right: 0;
+    /* right: -250px; */
+    /* z-index: 50; */
+    transition: 0.35s;
+}
+.side-menu input[id="menuicon"]:checked + label + div{
+    /* visibility: visible; */
+    right: 0;
+    width: 250px;
+}
+/* main-banner */
+.main-banner{
+    /* overflow-x: hidden; */
+}
 .main-content{
-    padding: var(--horizontal-space);
     background: #fafbfc;
 }
-
 .main-content h2{
     font-size: 18px;
     font-weight: 500;
@@ -123,7 +161,6 @@ left: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 50px;
 }
 .main-content li{
     position: relative;
@@ -134,6 +171,12 @@ left: 0;
     border: 1px solid #eee;
     border-radius: var(--border-radius);
     box-shadow: 2px 2px 10px #ddd;
+    transition: 0.4s;
+}
+.main-content li:hover{
+    transform: scale(1.05);
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 10px #aaa;
 }
 .main-content li img{
     width: 100%;
@@ -142,14 +185,12 @@ left: 0;
 .main-content li .text{
     padding: 15px 10px;
 }
-
 .main-content li .text h3{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     font-size: var(--font-size--regular);
 }
-
 .main-content li .text p{
     padding-top: 5px;
     font-size: var(--font-size--large);

@@ -12,29 +12,32 @@
     <script src="js/alt-header.js"></script>
 </head>
 <body>
-
-    <!-- status-bar -->
-    <div class="status-bar">
-        <div class="status-bar__icon--left">
-            <span>No Service</span>
-            <img src="images/wifi.svg" alt="wifi">
-        </div>
-        <div class="status-bar__time">
-            <span class="clock">11:00</span>
-        </div>
-        <div class="status-bar__icon--right">
-            <span>80%</span>
-            <span class="bettery"></span>
-        </div>
+<!-- status-bar -->
+<div class="status-bar">
+    <div class="status-bar__icon--left">
+        <span>No Service</span>
+        <img src="images/wifi.svg" alt="wifi">
     </div>
-    <!-- //status-bar -->
-    <!-- header -->
-    <header class="alt-header">
-        <h1 class="alt-header__title">로그인</h1>
-    </header>
-    <!-- //header -->
-    <!-- 로그인 -->
-    <main class="main-screen">
+    <div class="status-bar__time">
+        <span class="clock">11:00</span>
+    </div>
+    <div class="status-bar__icon--right">
+        <span>80%</span>
+        <span class="bettery"></span>
+    </div>
+</div>
+<!-- //status-bar -->
+<!-- screen-header -->
+<header class="screen-header">
+    <h1 class="screen-header__title">로그인</h1>
+    <div class="screen-header__hambtn">
+        <span><img src="images/icon_ham.png" alt="메뉴"></span>
+    </div>
+</header>
+<!-- //screen-header -->
+<!-- main -->
+<main class="main-screen">
+    <section class="content">
         <form action="" class="login-screen">
             <div class="login-input--list">
                 <input type="text" class="login-input" placeholder="아이디">
@@ -56,45 +59,47 @@
             <li><a href="#"><img src="images/facebook.png" alt="페이스북"></a></li>
             <li><a href="#"><img src="images/google.png" alt="구글"></a></li>
         </ul>
-    </main>
-    <div class="navigation">
-        <ul>
-            <li class="list">
-                <a href="index.html">
-                    <span class="icon">
-                        <ion-icon name="home-outline"></ion-icon>
-                    </span>
-                    <span class="text">홈</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="register.html">
-                    <span class="icon">
-                        <ion-icon name="bag-add-outline"></ion-icon>
-                    </span>
-                    <span class="text">상품등록</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="chatting.html">
-                    <span class="icon">
-                        <ion-icon name="chatbubble-outline"></ion-icon>
-                    </span>
-                    <span class="text">채팅</span>
-                </a>
-            </li>
-            <li class="list active">
-                <a href="login.html">
-                    <span class="icon">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </span>
-                    <span class="text">마이페이지</span>
-                </a>
-            </li>
-            <div class="indicator"></div>
-        </ul>
-    </div>
-    <!-- //로그인 -->
-    
+    </section>
+</main>
+<!-- //main -->
+<!-- navigation -->
+<nav class="navigation">
+    <ul>
+        <li class="list">
+            <a href="index.html">
+                <span class="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="text">홈</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="register.html">
+                <span class="icon">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                </span>
+                <span class="text">상품등록</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="chatting.html">
+                <span class="icon">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                </span>
+                <span class="text">채팅</span>
+            </a>
+        </li>
+        <li class="list active">
+            <a href="login.html">
+                <span class="icon">
+                    <ion-icon name="person-outline"></ion-icon>
+                </span>
+                <span class="text">마이페이지</span>
+            </a>
+        </li>
+        <div class="indicator"></div>
+    </ul>
+</nav>
+<!-- navigation -->
 </body>
 </html>
