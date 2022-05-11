@@ -1,6 +1,7 @@
 # Homecent
 가전제품 중고거래 앱을 기획부터 디자인, UIUX Design 전체를 경험하며 전반적인 프로세스의 이해도를 높이고자 함
 - 미리보기 : https://namoo9009.github.io/mobileWeb_Homecent/
+- LandingPage : https://namoo9009.github.io/homecent_landing/index
 - 기획서 : https://namoo9009.github.io/homecent_planing/
 - 디자인 : https://namoo9009.github.io/homecent_design/
 
