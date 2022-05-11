@@ -2,8 +2,6 @@
 
     --max-width: 576px;
     --horizontal-space: 20px;
-    /* --vertical-space--top: 75px;
-    --vertical-space--bottom: 75px; */
     --header-border--bottom: 1px solid #C1C1C1;
 
     --color-main: #00BBD3;
@@ -17,7 +15,7 @@
     --color--grey-light: #D5D7DB;
     --color--grey-bright: #EEE;
 
-    --font-size--h1: 18px;
+    --font-size--h1: 20px;
     --font-size--large: 16px;
     --font-size--medium: 15px;
     --font-size--regular: 14px;

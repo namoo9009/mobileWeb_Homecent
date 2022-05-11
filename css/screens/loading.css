@@ -1,6 +1,8 @@
 /* loading.css */
 
 .loading-screen{
+    z-index: 100;
+    position: absolute;
     margin: 0;
     padding: 0;
     padding-top: 200px;

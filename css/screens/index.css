@@ -1,87 +1,7 @@
 /* main.css */
 
-/* splash */
-.splash{
-    z-index: 20;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    width: 100vw;
-    max-width: var(--max-width);
-    height: 100vh;
-    color: var(--color--white);
-    background-color: var(--color-main);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.splash.off{
-    animation: splashOff 0.4s linear 1 forwards;
-}
-@keyframes splashOff{
-    0%{
-        opacity: 1;
-        visibility: visible;
-        display: block;
-    }
-    100%{
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        display: none;
-    }
-}
-.splash img{
-    display: block;
-    margin-bottom: 20px;
-    width: 100px;
-    transform: translateY(-50px);
-}
-.splash h1{
-    z-index: 1;
-    position: relative;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: var(--font-weight--bold);
-    transform: translateY(-50px);
-    color: transparent;
-    -webkit-text-stroke: 0.5px rgba(255,255,255,0.3);
-}
-.splash h1::after{
-    z-index: 1;
-    content: attr(data-splash);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    color: #fff;
-    overflow: hidden;
-    animation: splasnlAni 2s ease-in-out forwards;
-    -webkit-text-stroke: 0.5px rgba(255,255,255,0.1);
-    
-}
-.splash.on h1::after{
-    width: 100%;
-}
-@keyframes splasnlAni{
-    0%,10%,100%{
-        width: 0;
-    }
-    60%,65%{
-        width: 100%;
-    }
-}
-
-
 /* main */
 /* header */
-.side-menu{
-
-}
 .side-menu input[id="menuicon"]{
     display: none;
 }
@@ -130,14 +50,11 @@
 }
 .side-menu div.side-menu-bar{
     position: absolute;
-    /* visibility: hidden; */
     width: 0;
     height: 100vh;
     background-color: var(--color--grey-bright);
     top: 0;
     right: 0;
-    /* right: -250px; */
-    /* z-index: 50; */
     transition: 0.35s;
 }
 .side-menu input[id="menuicon"]:checked + label + div{
@@ -147,15 +64,16 @@
 }
 /* main-banner */
 .main-banner{
-    /* overflow-x: hidden; */
+    overflow: hidden;
 }
+/* main-conten */
 .main-content{
     background: #fafbfc;
 }
 .main-content h2{
     font-size: 18px;
     font-weight: 500;
-    padding: 5px 0 15px;
+    padding: 10px 0 15px;
 }
 .main-content ul{
     display: flex;

@@ -8,6 +8,7 @@
     font-weight: var(--font-weight--bold);
     border: none;
     border-radius: var(--border-radius);
+    cursor: pointer;
 }
 .btn.color{
     color: var(--color--white);

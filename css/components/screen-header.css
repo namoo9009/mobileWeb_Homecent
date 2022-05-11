@@ -12,9 +12,6 @@
     border-bottom: none;
 }
 
-
-
-
 .screen-header.main .screen-header__title{
     color: #fff;
 }
@@ -24,6 +21,7 @@ left: 50%;
 top: 50%;
 transform: translateX(-50%) translateY(-50%);
 font-size: var(--font-size--h1);
+font-weight: var(--font-weight--bold);
 }
 .screen-header__icon span{
     margin-left: 10px;

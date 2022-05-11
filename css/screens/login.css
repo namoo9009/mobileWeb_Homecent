@@ -1,5 +1,5 @@
 /* login.css */
-form{
+form.login-screen{
     padding-bottom: 50px;
     margin-bottom: 40px;
 }
@@ -73,18 +73,12 @@ form.login-screen{
 .login-input--list{
     position: relative;
 }
-.login-input--list button{
-    position: absolute;
-    right: 10px;
-    top: 65px;
-    height: 35px;
-    font-size: var(--font-size--small);
-    border-radius: var(--border-radius);
-    border: none;
-}
 
 /* 회원가입 */
-.login-input--list label{
+.sign-in section{
+    padding: 0 20px;
+}
+.sign-in .login-input--list label{
     display: inline-block;
     padding-left: 3px;
     margin-bottom: 5px;

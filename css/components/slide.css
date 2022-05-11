@@ -1,14 +1,13 @@
 .slide-wrapper{
     position: relative;
-    width: 500%;
+    width: 100%;
     height: auto;
     box-sizing: border-box;
 }
 .slide-wrapper .slides{
-    width: calc(100% / 5);
+    width: 100%;
     height: auto;
     white-space: nowrap;
-    overflow-x: scroll;
 }
 .slide-wrapper .slides.animated{
 position: absolute;

@@ -48,6 +48,9 @@
 .register-content li textarea{
     width: 100%;
 }
+.register-content li textarea::placeholder{
+    color: var(--color--grey-light);
+}
 
 .register-submit{
     margin-top: 30px;
